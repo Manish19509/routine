@@ -16,15 +16,12 @@
 </header>
 
 <div class="container">
-  <div class="day-selector">
-    <label for="day">Select Day:</label>
-    <select id="day" onchange="showRoutine()">
-      <option value="Monday">Monday</option>
-      <option value="Tuesday">Tuesday</option>
-      <option value="Wednesday">Wednesday</option>
-      <option value="Thursday">Thursday</option>
-      <option value="Friday">Friday</option>
-    </select>
+  <div class="day-tabs">
+    <button class="day-tab" onclick="showRoutine('Monday')">Monday</button>
+    <button class="day-tab" onclick="showRoutine('Tuesday')">Tuesday</button>
+    <button class="day-tab" onclick="showRoutine('Wednesday')">Wednesday</button>
+    <button class="day-tab" onclick="showRoutine('Thursday')">Thursday</button>
+    <button class="day-tab" onclick="showRoutine('Friday')">Friday</button>
   </div>
 
   <table id="routine-table">
