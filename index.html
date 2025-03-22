@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daily Planner</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  
-<header>
-  <div class="logo">
-    <img src="logo.jpeg" alt="Daily Planner Logo">
-  </div>
-  <h1>Daily Planner</h1>
-</header>
-
-<div class="container">
-  <div class="day-tabs">
-    <button class="day-tab" onclick="showRoutine('Monday')">Monday</button>
-    <button class="day-tab" onclick="showRoutine('Tuesday')">Tuesday</button>
-    <button class="day-tab" onclick="showRoutine('Wednesday')">Wednesday</button>
-    <button class="day-tab" onclick="showRoutine('Thursday')">Thursday</button>
-    <button class="day-tab" onclick="showRoutine('Friday')">Friday</button>
-  </div>
-
-  <table id="routine-table">
-    <!-- Routine will be dynamically inserted here -->
-  </table>
-</div>
-
-<script src="script.js"></script>
-
+    <div class="custom-cursor"></div>
+    <div class="container">
+        <h1>Daily Planner</h1>
+        <div class="tabs">
+            <span class="day-tab" onclick="showRoutine('Monday')">Monday</span>
+            <span class="day-tab" onclick="showRoutine('Tuesday')">Tuesday</span>
+            <span class="day-tab" onclick="showRoutine('Wednesday')">Wednesday</span>
+            <span class="day-tab" onclick="showRoutine('Thursday')">Thursday</span>
+            <span class="day-tab" onclick="showRoutine('Friday')">Friday</span>
+        </div>
+        <table id="routine-table"></table>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
